@@ -7,7 +7,7 @@ public class Test2 {
 	
 	/*
 	 * What will happen if these two methods are called by different threads?
-	 * 
+	 * Answer: It would be a race condition since the objects are blocked by synchonized in different order 
 	 */
 	public void mym1() {
 		synchronized (String.class) {

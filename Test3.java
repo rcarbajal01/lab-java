@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 /*
  * Check the following class and identify what issues it might entail.
  */
-public class EmailAccount {
+public class EmailAccount {//public Class name does not match with file name
 
 	private UUID uuid;
 	private String username;
@@ -18,6 +18,8 @@ public class EmailAccount {
 
 
 	public EmailAccount(final String user, final String n) {
+		// If checkServer does not implements other functionality that might change rsult value this 
+		// condition will never be met since checkServer is always false
 		if (checkServer()) {
 			this.uuid = UUID.randomUUID();
 			this.username = user;

@@ -2,6 +2,7 @@ package sts;
 
 /*
  * Why the following loop will fail?
+ * R: limit is not defined and a condition is expected
  */
 class Test   
 {  
